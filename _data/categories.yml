@@ -1,0 +1,3 @@
+- id: ledgers
+  title: Ledgers
+  description: Ledgers are entry point for all transactions in Pockity

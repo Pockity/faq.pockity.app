@@ -48,6 +48,23 @@ main {
     margin: 0 auto;
   }
 
+  article.page-content {
+    padding: 1rem;
+
+    &.no-style {
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+      margin-top: 1.5rem;
+    }
+  }
+
   nav {
     flex-direction: column;
     justify-content: unset;

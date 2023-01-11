@@ -11,8 +11,6 @@ It aims to form a habit of tracking expenses, setting up budgets, and managing s
 
 It uses the <a href="https://en.wikipedia.org/wiki/Double-entry_bookkeeping" data-tooltip="Read more on Wikipedia">Double Entry Book-Keeping System</a>, and how Pockity uses it is explained in detail in [this guide]().
 
-<br />
-
 ### Additional Support 
 
-If you don't find information about a certain topic, or have more questions about the app, please get in touch by sending an email to [mailto:support@pockity.app](support@pockity.app).
+If you don't find information about a certain topic, or have more questions about the app, please get in touch by sending an email to [support@pockity.app](mailto:support@pockity.app).

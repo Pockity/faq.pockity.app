@@ -31,6 +31,25 @@ github_username:  pockity
 plugins:
   - jekyll-local-theme
 
+permalink: /:category/:title/
+
+defaults:
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ""
+    type: drafts
+  values:
+    layout: post
+
 # Theme Settings
 local_theme: launchkit
 brandColor: '#5856D6'
