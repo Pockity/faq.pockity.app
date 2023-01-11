@@ -8,7 +8,7 @@ layout: home
 
 Account transfers are one of the possible entry types in Pockity. 
 
-It invovles two accounts from the same ledger. 
+It involves two accounts from the same ledger. 
 
 #### Credit Cards
 You can create a separate credit card account in Pockity by selecting the **Credit Card** type for the account. 
@@ -41,5 +41,8 @@ Savings Account: -$2500.00
 
 Pockity cannot track the returns on such instruments and as such, its balance will always reflect amounts in that point of time. You may create reimbursement entries to track returns or expenses to track losses as necessary. 
 
+#### Cash Withdrawals 
+When you withdraw cash, you can create a simple transfer from the source account to a cash account. 
+
 #### Debit Cards 
-Debit cards are usually linked to a Savings or Checkings account, and as such should never have its own Account. But you can still create one should you wish to track expenses separately from such accounts. 
+Debit cards are usually linked to a Savings or Current account, and as such should never have its own Account. But you can still create one should you wish to track expenses separately from such accounts. 

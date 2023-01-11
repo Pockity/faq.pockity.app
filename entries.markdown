@@ -1,6 +1,5 @@
 ---
 layout: home
-style: landing
 ---
 
 ## Entries
