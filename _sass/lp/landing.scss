@@ -29,6 +29,10 @@ body.landing {
   }
 
   footer {
+    .grid {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+
     .footlinks a {
       font-size: inherit;
     }    
@@ -38,6 +42,7 @@ body.landing {
 /*** MAIN ***/
 main {
   margin-top: 2rem;
+  min-height: calc(100vh - 15rem);
 
   .grid {
     grid-template-columns: 1fr 4fr;
