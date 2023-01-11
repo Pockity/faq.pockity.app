@@ -1,7 +1,6 @@
 ---
 layout: home
 style: landing
-category: ledgers
 ---
 
 ## Ledgers

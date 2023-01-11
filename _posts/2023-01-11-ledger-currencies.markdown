@@ -1,7 +1,7 @@
 ---
 title: "Currencies"
 permalink: /ledgers/currencies/
-layout: post
+layout: home
 ---
 
 ## Ledger Currencies
