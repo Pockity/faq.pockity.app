@@ -1,0 +1,64 @@
+header {
+  vertical-align: middle;
+
+  #logo-title {
+    align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+header:not(.scrolled) {
+  h1 span { 
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+body.landing {
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  footer {
+    .footlinks a {
+      font-size: inherit;
+    }    
+  }
+}
+
+/*** MAIN ***/
+main {
+  margin-top: 2rem;
+
+  .grid {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .page-content {
+    max-width: 64ch;
+    margin: 0 auto;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: unset;
+
+    a {
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}

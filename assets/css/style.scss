@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "variables";
+
+.grid {
+  &.align-baseline {
+    align-items: baseline;
+  }
+}
+
+.linked, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+header {
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+.lp-blur {
+  width: 452px;
+  height: 386px;
+  display: block;
+  position: absolute;
+
+  background: url('../images/lp/blur.png');
+  z-index: 0;
+}
+
+@import "lp/landing.scss";

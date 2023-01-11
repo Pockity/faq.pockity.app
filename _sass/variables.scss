@@ -1,0 +1,10 @@
+:root {
+  --dz-brand-color: #5856D6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dz-background-color: #2F3035;
+    --dz-brand-color: #5E5CE6;
+  }
+}
