@@ -52,7 +52,6 @@ defaults:
 
 # Theme Settings
 local_theme: launchkit
-brandColor: '#5856D6'
 caption: Simple personal budgeting and expense tracking
 
 # Exclude from processing.

@@ -29,10 +29,6 @@ body.landing {
   }
 
   footer {
-    .grid {
-      grid-template-columns: 2fr 1fr 1fr;
-    }
-
     .footlinks a {
       font-size: inherit;
     }    
@@ -43,10 +39,6 @@ body.landing {
 main {
   margin-top: 2rem;
   min-height: calc(100vh - 15rem);
-
-  .grid {
-    grid-template-columns: 1fr 4fr;
-  }
 
   .page-content {
     max-width: 64ch;
@@ -81,6 +73,36 @@ main {
       &:hover {
         transform: none;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body.landing {
+    footer {
+      .grid {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+    }
+  }
+
+  main .grid {
+    grid-template-columns: 1fr 4fr;
+
+    nav {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .grid nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -1rem 0 1rem;
+
+    a {
+      margin-left: 0.5rem;
     }
   }
 }
