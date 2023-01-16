@@ -27,6 +27,9 @@ url: "https://faq.pockity.app" # the base hostname & protocol for your site, e.g
 twitter_username: pockityapp
 github_username:  pockity
 
+site:
+ - url: "https://faq.pockity.app"
+
 # Build settings
 plugins:
   - jekyll-local-theme

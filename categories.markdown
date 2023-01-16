@@ -13,7 +13,7 @@ They are never owned by the user, and always get credited.
 #### Budgets 
 Categories support *Weekly* and *Monthly* budgets. 
 
-When you setup a budget on a category, you can setup both Lockscreen and Homescreen widgets to get a visual representation of your expenses in such categories. 
+When you setup a budget on a category, you can setup both Lock screen and Home screen widgets to get a visual representation of your expenses in such categories. 
 
 Budgets are also displayed when creating a new expense, so you always know how much you have left to spend in that specific category. 
 
