@@ -31,9 +31,9 @@ Savings Account: -$22.50
 --------------------------
 ```
 
-In a double entry system, the total transaction amount should always result to zero, which is achieved by transfering funds from the Account to the Category. 
+In a double entry system, the total transaction amount should always result to zero, which is achieved by transferring funds from the Account to the Category. 
 
-In effect, Categories function like an expense account which always get credited. As they are not *owned* by you, the funds transfered to them are no longer available. 
+In effect, Categories function like an expense account which always get credited. As they are not *owned* by you, the funds transferred to them are no longer available. 
 
 
 #### Transfers
@@ -46,10 +46,10 @@ Savings Account: -$300.00
 --------------------------
 ```
 
-Some tips about transfering across accounts are [listed here](/entries/transfers/).
+Some tips about transferring across accounts are [listed here](/entries/transfers/).
 
 #### Reimbursement 
-A reimbursement is an income transaction. It works using a specialised category, `Reimbursements` to account for the double entry system and keep the transaction amount as zero. A transaction would look as follows:
+A reimbursement is an income transaction. It works using a specialized category, `Reimbursements` to account for the double entry system and keep the transaction amount as zero. A transaction would look as follows:
 ```
          Salary:  $5000.00
  Reimbursements: -$5000.00
@@ -59,5 +59,5 @@ Savings Account: +$5000.00
 --------------------------
 ```
 
-As the user, you never own funds in a category, so transfering from a fixed known category to the desired account effectively gives us a net zero transaction. 
+As the user, you never own funds in a category, so transferring from a fixed known category to the desired account effectively gives us a net zero transaction. 
 
