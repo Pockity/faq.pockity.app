@@ -5,6 +5,11 @@ style: landing
 
 ## Ledgers
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/ledgers/header-dark.jpg 1x, /assets/images/ledgers/header-dark@2x.jpg 2x, /assets/images/ledgers/header-dark@3x.jpg 3x">
+  <img src="/assets/images/ledgers/header.jpg" srcset="/assets/images/ledgers/header@2x.jpg 2x, /assets/images/ledgers/header@3x.jpg 3x" width="712" height="84" alt="Graphical representation of Pockity's ledgers"/>
+</picture>
+
 Ledgers are a collection of entries, accounts and categories. 
 
 Upon initial setup, a default **Primary Ledger** is created and it linked to the current locale's currency. 

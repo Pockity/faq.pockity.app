@@ -3,6 +3,15 @@ layout: home
 style: landing
 ---
 
+<picture>
+  <source media="(max-width: 600px)" srcset="/assets/images/faq-light-400w.jpg 1x, /assets/images/faq-light-800w.jpg 2x, /assets/images/faq-light-1600w.jpg 3x">
+  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/faq-light-800w.jpg 1x, /assets/images/faq-light-1600w.jpg 2x, /assets/images/faq-light@3x.jpg 3x">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark-400w.jpg 1x, /assets/images/faq-dark-800w.jpg 2x">
+  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark-800w.jpg 1x, /assets/images/faq-dark@2x.jpg 2x">
+  <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark.jpg 1x, /assets/images/faq-dark@2x.jpg 2x, /assets/images/faq-dark@3x.jpg 3x">
+  <img src="/assets/images/faq-light.jpg" srcset="/assets/images/faq-light@2x.jpg 2x, /assets/images/faq-light@3x.jpg 3x" width="1130" height="712" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
+</picture>
+
 ## Frequently Asked Questions, Guides and Tips
 
 Pockity is a simple Budgeting and Expense tracking application for iOS, iPadOS (and macOS, coming later this year). 

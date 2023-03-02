@@ -4,6 +4,11 @@ layout: home
 
 ## Categories
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/categories/header-dark.jpg 1x, /assets/images/categories/header-dark@2x.jpg 2x, /assets/images/categories/header-dark@3x.jpg 3x">
+  <img src="/assets/images/categories/header.jpg" srcset="/assets/images/categories/header@2x.jpg 2x, /assets/images/categories/header@3x.jpg 3x" width="712" height="122" alt="Graphical representation of Pockity's categories"/>
+</picture>
+
 Categories are unique accounts in Pockity which only support expense entries. 
 
 They are never owned by the user, and always get credited. 

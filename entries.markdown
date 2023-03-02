@@ -4,6 +4,11 @@ layout: home
 
 ## Entries
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/images/entries/header-dark.jpg 1x, /assets/images/entries/header-dark@2x.jpg 2x, /assets/images/entries/header-dark@3x.jpg 3x">
+  <img src="/assets/images/entries/header.jpg" srcset="/assets/images/entries/header@2x.jpg 2x, /assets/images/entries/header@3x.jpg 3x" width="712" height="150" alt="Graphical representation of Pockity's entries"/>
+</picture>
+
 An **Entry** denotes a financial transaction in the ledger. 
 
 It can be a:
