@@ -5,7 +5,7 @@ style: landing
 
 ## Frequently Asked Questions, Guides and Tips
 
-<picture>
+<picture style="margin-top: 2rem;">
   <source media="(max-width: 600px)" srcset="/assets/images/faq-light-400w.jpg 1x, /assets/images/faq-light-800w.jpg 2x, /assets/images/faq-light-1600w.jpg 3x">
   <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/faq-light-800w.jpg 1x, /assets/images/faq-light-1600w.jpg 2x, /assets/images/faq-light@3x.jpg 3x">
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark-400w.jpg 1x, /assets/images/faq-dark-800w.jpg 2x">

@@ -32,7 +32,9 @@ site:
 
 # Build settings
 plugins:
-  - jekyll-local-theme
+  - github-pages
+
+remote_theme: dezinezync/launchkit
 
 permalink: /:category/:title/
 
@@ -56,8 +58,7 @@ defaults:
     layout: post
 
 # Theme Settings
-local_theme: launchkit
-caption: Simple personal budgeting and expense tracking
+caption: Frequently asked questions, tips and documentation for Pockity - Simple personal budgeting and expense tracking
 
 # Exclude from processing.
 # The following items will not be processed, by default.

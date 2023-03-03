@@ -43,6 +43,10 @@ main {
   .page-content {
     max-width: 64ch;
     margin: 0 auto;
+
+    picture {
+      display: block;
+    }
   }
 
   article.page-content {
