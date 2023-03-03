@@ -1,6 +1,7 @@
 ---
 layout: home
 style: landing
+permalink: /ledgers/
 ---
 
 ## Ledgers

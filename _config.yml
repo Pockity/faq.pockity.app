@@ -36,6 +36,8 @@ plugins:
 
 permalink: /:category/:title/
 
+include: ['_pages', 'blog']  
+
 defaults:
 - scope:
     path: ""

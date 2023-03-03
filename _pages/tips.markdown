@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /tips/
 ---
 
 ## Tips
