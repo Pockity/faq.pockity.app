@@ -1,4 +1,5 @@
 ---
+title: Terms
 layout: home
 permalink: /terms/
 ---

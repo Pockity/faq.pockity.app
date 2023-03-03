@@ -1,4 +1,5 @@
 ---
+title: Recurring
 layout: home
 permalink: /recurring/
 ---

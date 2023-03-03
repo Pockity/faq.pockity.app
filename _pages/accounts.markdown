@@ -1,4 +1,5 @@
 ---
+title: Accounts
 layout: home
 permalink: /accounts/
 ---

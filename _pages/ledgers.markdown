@@ -1,4 +1,5 @@
 ---
+title: Ledgers
 layout: home
 style: landing
 permalink: /ledgers/

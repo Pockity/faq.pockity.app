@@ -1,4 +1,5 @@
 ---
+title: Entries
 layout: home
 permalink: /entries/
 ---
