@@ -30,3 +30,4 @@ An example of this is:
 #### Useful Links
 
 - [Ledger Currencies](/ledgers/currencies)
+- [Shared Ledgers](/ledgers/shared)

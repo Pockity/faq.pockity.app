@@ -32,4 +32,8 @@ header {
   z-index: 0;
 }
 
+ul li {
+  list-style: disc;
+}
+
 @import "lp/faq.scss";
