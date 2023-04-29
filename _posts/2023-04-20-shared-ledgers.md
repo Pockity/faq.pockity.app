@@ -1,5 +1,5 @@
 ---
-title: Ledgers
+title: Shared Ledgers
 layout: home
 style: landing
 permalink: /ledgers/shared/

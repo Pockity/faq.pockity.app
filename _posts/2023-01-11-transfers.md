@@ -1,5 +1,5 @@
 ---
-title: "Currencies"
+title: "Transfers"
 permalink: /entries/transfers/
 layout: home
 ---
