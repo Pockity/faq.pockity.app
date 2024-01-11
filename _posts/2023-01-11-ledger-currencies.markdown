@@ -22,3 +22,9 @@ When creating a new entry in a ledger with a custom currency, the entry's amount
 - Localized Value: USD 26.83 
 
 In the timeline, the entry will always display with localized value (USD 26.83) for convenience. However, when editing the entry, it will always display the source value (EUR 25,00).
+
+#### Useful Links
+
+- [Ledgers](/ledgers)
+- [Creating Ledgers](/ledgers/creating/)
+- [Shared Ledgers](/ledgers/shared)

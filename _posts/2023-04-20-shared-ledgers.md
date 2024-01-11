@@ -12,6 +12,10 @@ permalink: /ledgers/shared/
   <img src="/assets/images/ledgers/header.jpg" srcset="/assets/images/ledgers/header@2x.jpg 2x, /assets/images/ledgers/header@3x.jpg 3x" width="712" height="84" alt="Graphical representation of Pockity's ledgers"/>
 </picture>
 
+<div class="note">
+  <p>Sharing Ledgers requires Pockity+</p>
+</div>
+
 Shared Ledgers enable you to share all entries, account and categories data with anyone with an iOS device or Mac.
 
 ---
@@ -44,4 +48,5 @@ To manage permissions or collaborators for the share, repeat the above steps
 #### Useful Links
 
 - [Ledgers](/ledgers)
+- [Creating Ledgers](/ledgers/creating/)
 - [Ledger Currencies](/ledgers/currencies)

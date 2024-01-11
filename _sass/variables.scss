@@ -1,11 +1,12 @@
-:root {
-  --dz-brand-color: #5856D6;
+[data-theme="light"], :root:not([data-theme="dark"]) {
+  --dz-brand-color: AccentColor;
+  --dz-background-color: Canvas;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
   :root, :root:not([data-theme=light]) {
-    --color: #EFEFF0;
-    --dz-background-color: #2F3035;
-    --dz-brand-color: #5E5CE6;
+    --color: CanvasText;
+    --dz-background-color: Canvas;
+    --dz-brand-color: AccentColor;
   }
 }
