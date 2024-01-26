@@ -3,6 +3,7 @@ title: Ledgers
 layout: home
 style: landing
 permalink: /ledgers/
+categories: ledgers
 ---
 
 ## Ledgers
@@ -16,7 +17,7 @@ Ledgers are a collection of entries, accounts and categories.
 
 Upon initial setup, a default **Primary Ledger** is created and it linked to the current locale's currency. 
 
-With [Pockity+](), you can create as many ledgers as you need, each with its own currency. 
+With [Pockity+](/pockityplus), you can create as many ledgers as you need, each with its own currency. 
 
 #### Segmenting Accounts 
 
@@ -26,9 +27,3 @@ An example of this is:
 - **Primary**: Your personal accounts, and expenses 
 - **Business**: Your business accounts and expenses associated with those accounts 
 - **Joint**: Your joint accounts with your family or friends
-
-#### Useful Links
-
-- [Ledger Currencies](/ledgers/currencies)
-- [Creating Ledgers](/ledgers/creating/)
-- [Shared Ledgers](/ledgers/shared)

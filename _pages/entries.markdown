@@ -2,6 +2,7 @@
 title: Entries
 layout: home
 permalink: /entries/
+categories: entries
 ---
 
 ## Entries

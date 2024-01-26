@@ -2,6 +2,7 @@
 title: Backups
 layout: home
 permalink: /backups/
+categories: tips
 ---
 
 ## Backups

@@ -2,6 +2,7 @@
 title: "Transfers"
 permalink: /entries/transfers/
 layout: home
+categories: entries
 ---
 
 ## Account Transfers 

@@ -2,6 +2,7 @@
 title: Accounts
 layout: home
 permalink: /accounts/
+categories: accounts
 ---
 
 ## Accounts

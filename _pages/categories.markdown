@@ -2,6 +2,7 @@
 title: Categories
 layout: home
 permalink: /categories/
+categories: categories
 ---
 
 ## Categories

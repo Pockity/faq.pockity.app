@@ -3,6 +3,7 @@ title: Creating Ledgers
 layout: home
 style: landing
 permalink: /ledgers/creating/
+categories: ledgers
 ---
 
 ## Creating Ledgers
@@ -34,9 +35,3 @@ When a new ledger is created, Pockity automatically configures the default list 
 No accounts are created when a new ledger is created, you will need to setup at least:
 - One account to create expense or reimbursement entries
 - Two accounts to create transfers 
-
-#### Useful Links
-
-- [Ledgers](/ledgers)
-- [Shared Ledgers](/ledgers/shared/)
-- [Ledger Currencies](/ledgers/currencies/)

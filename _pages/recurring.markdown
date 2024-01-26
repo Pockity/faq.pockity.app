@@ -2,6 +2,7 @@
 title: Recurring
 layout: home
 permalink: /recurring/
+categories: recurring
 ---
 
 ## Recurring

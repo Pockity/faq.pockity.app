@@ -2,6 +2,7 @@
 title: Tips
 layout: home
 permalink: /tips/
+categories: tips
 ---
 
 ## Tips

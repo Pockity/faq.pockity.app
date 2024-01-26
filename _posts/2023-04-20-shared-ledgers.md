@@ -3,6 +3,7 @@ title: Shared Ledgers
 layout: home
 style: landing
 permalink: /ledgers/shared/
+categories: ledgers
 ---
 
 ## Shared Ledgers
@@ -42,11 +43,3 @@ To manage permissions or collaborators for the share, repeat the above steps
 - Right click (or two finger click) on a Ledger in the sidebar to bring up its options menu
 - Click on share
 - Follow the on-screen process once the share is ready (this may take anywhere from a few seconds to minutes to complete)
-
----
-
-#### Useful Links
-
-- [Ledgers](/ledgers)
-- [Creating Ledgers](/ledgers/creating/)
-- [Ledger Currencies](/ledgers/currencies)
