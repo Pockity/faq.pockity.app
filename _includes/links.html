@@ -2,11 +2,9 @@
   {% if collections[tag] %}
     <h4>Useful Links</h4>
     <ul>
-      {% for item in collections[tag] %}
-        {% if item.url != page.url %}
-          <li><a href="{{ item.url | absolute_url }}">{{ item.data.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+    {% for item in collections[tag] %}{% if item.url != page.url %}
+      <li><a href="{{ item.url | absolute_url }}">{{ item.data.title }}</a></li>
+    {% endif %}{% endfor %}
     </ul>
   {% endif %}
 {% endfor %}
