@@ -3,6 +3,36 @@
   --dz-background-color: Canvas;
 }
 
+:root {
+  color-scheme: light dark;
+
+  /* System-first sans stack (Apple-like feel without shipping proprietary fonts) */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Fluid type scale */
+  --fs-body: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+  --fs-small: clamp(0.8125rem, 0.78rem + 0.15vw, 0.9rem);
+  --fs-dek: clamp(1.125rem, 1.04rem + 0.55vw, 1.5rem);
+  --fs-h1: clamp(2rem, 1.45rem + 2.8vw, 3.5rem);
+  --fs-h2: clamp(1.375rem, 1.18rem + 1.2vw, 2rem);
+  --fs-h3: clamp(1.125rem, 1.02rem + 0.6vw, 1.375rem);
+
+  /* Measure & rhythm */
+  --measure: 70ch;
+  --leading-body: 1.65;
+  --leading-head: 1.12;
+
+  /* Subtle, Apple-ish neutrals */
+  --text-1: color-mix(in oklab, CanvasText 92%, Canvas 8%);
+  --text-2: color-mix(in oklab, CanvasText 70%, Canvas 30%);
+  --rule: color-mix(in oklab, CanvasText 18%, Canvas 82%);
+  --link: color-mix(in oklab, #0a66ff 80%, CanvasText 20%);
+}
+
 @media only screen and (prefers-color-scheme: dark) {
   :root, :root:not([data-theme=light]) {
     --color: CanvasText;

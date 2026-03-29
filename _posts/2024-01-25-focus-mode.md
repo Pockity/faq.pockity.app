@@ -3,7 +3,7 @@ title: Focus Modes
 layout: home
 style: landing
 permalink: /ledgers/focusmode/
-categories: ledgers
+tags: [ledgers]
 ---
 
 ## Focus Mode

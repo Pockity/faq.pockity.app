@@ -3,7 +3,7 @@ title: Repair Ledgers
 layout: home
 style: landing
 permalink: /ledgers/repairs/
-categories: ledgers
+tags: [ledgers]
 ---
 
 ## Repair Ledgers

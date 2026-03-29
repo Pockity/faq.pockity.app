@@ -2,7 +2,7 @@
 title: Nested and Sub-Categories
 layout: home
 permalink: /categories/nested-subcategories/
-categories: categories
+tags: [categories]
 ---
 
 ### Nested and Sub-Categories

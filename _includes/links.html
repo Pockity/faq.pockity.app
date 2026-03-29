@@ -1,15 +1,12 @@
-{% for category in site.categories %}
-{% capture category_name %}{{ category | first }}{% endcapture %}
-{% if page.categories contains category_name %}
-{% if site.categories[category_name].size != 0 %}
-<h4>Useful Links</h4>
-<ul>
-  {% for post in site.categories[category_name] %}
-  {% if post.url != page.url %}
-  <li><!--<span>{{ post.categories }}</span>--><a href="{{post.url | absolute_url}}">{{post.title}}</a></li>
+{% for tag in tags %}
+  {% if collections[tag] %}
+    <h4>Useful Links</h4>
+    <ul>
+      {% for item in collections[tag] %}
+        {% if item.url != page.url %}
+          <li><a href="{{ item.url | absolute_url }}">{{ item.data.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   {% endif %}
-  {% endfor %}
-</ul>
-{% endif %} 
-{% endif %}  
 {% endfor %}

@@ -2,7 +2,7 @@
 title: Global Tags
 layout: home
 permalink: /entries/tags/
-categories: entries
+tags: [entries]
 ---
 
 ### Global Tags: Tagging System for Entries and Filtering

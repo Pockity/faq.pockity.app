@@ -2,7 +2,7 @@
 title: Spotlight Search Integration
 layout: home
 permalink: /entries/spotlight/
-categories: entries
+tags: [entries]
 ---
 
 ### Spotlight Search Integration

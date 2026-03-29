@@ -3,7 +3,7 @@ title: Creating Ledgers
 layout: home
 style: landing
 permalink: /ledgers/creating/
-categories: ledgers
+tags: [ledgers]
 ---
 
 ## Creating Ledgers

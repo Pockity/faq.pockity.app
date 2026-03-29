@@ -3,7 +3,7 @@ title: Expense Importer
 layout: home
 style: landing
 permalink: /entries/browser/
-categories: entries
+tags: [entries]
 ---
 
 ## Expense Importer (Safari)

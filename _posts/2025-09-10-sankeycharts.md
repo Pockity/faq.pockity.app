@@ -2,7 +2,7 @@
 title: Sankey Chart
 layout: home
 permalink: /ledgers/sankey/
-categories: ledgers
+tags: [ledgers]
 ---
 
 ### Sankey Chart Visualizations

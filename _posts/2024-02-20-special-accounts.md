@@ -3,7 +3,7 @@ title: Special Accounts
 layout: home
 style: landing
 permalink: /accounts/special/
-categories: accounts
+tags: [accounts]
 ---
 
 ## Special Accounts

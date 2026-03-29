@@ -2,7 +2,7 @@
 title: Account Charts
 layout: home
 permalink: /accounts/charts/
-categories: accounts
+tags: [accounts]
 ---
 
 ### What are Account Charts?

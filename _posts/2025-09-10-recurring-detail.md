@@ -2,7 +2,7 @@
 title: Recurring Items
 layout: home
 permalink: /recurring/howto/
-categories: recurring
+tags: [recurring]
 ---
 
 ### What are Recurring Items?

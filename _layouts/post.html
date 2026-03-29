@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <body class="{% if page.style %}{{ page.style }} {% endif %}">
-  {%- include header.html -%}
+  {%- include "header.html" -%}
 
   <main>
     <article class="page-content no-style"> 
       {{ content }}
 
-      {%- include links.html -%}
-    </div>
+      {%- include "links.html" -%}
+    </article>
     <section class="page-content">
       <a href="#" onclick="window.history.back();">Back</a>
     </section>
   </main>
 
-  {%- include footer.html -%}
+  {%- include "footer.html" -%}
 </body>
 </html>

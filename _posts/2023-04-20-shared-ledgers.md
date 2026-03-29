@@ -3,7 +3,7 @@ title: Shared Ledgers
 layout: home
 style: landing
 permalink: /ledgers/shared/
-categories: ledgers
+tags: [ledgers]
 ---
 
 ## Shared Ledgers
