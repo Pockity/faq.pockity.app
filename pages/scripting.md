@@ -295,6 +295,8 @@ On macOS, you can set up automations that trigger when you receive a message (SM
 5. Select **Run Immediately** to ensure the automation runs in the background without requiring manual confirmation.
 6. Click **Done** and then select the Shortcut you created to handle the parsing.
 
+> **Also** You can use Email as a trigger and configure the Automation based on the email's subject line if it includes the account name or number.
+
 ### Permissions & Security
 
 For scripting to work, you must grant **Automation** permissions to the process running the MCP server (e.g., your Terminal or AI application).

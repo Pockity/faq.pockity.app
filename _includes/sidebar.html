@@ -1,10 +1,10 @@
 <nav>
-  <a href="/ledgers">Ledgers</a>
-  <a href="/entries">Entries</a>
-  <a href="/accounts">Accounts</a>
-  <a href="/categories">Categories</a>
-  <a href="/recurring">Recurring</a>
-  <a href="/scripting">Scripting</a>
-  <a href="/backups">Backups</a>
-  <a href="/tips">Tips</a>
+  <a href="/ledgers" class="{% if page.url == '/ledgers/' %}active{% endif %}">Ledgers</a>
+  <a href="/entries" class="{% if page.url == '/entries/' %}active{% endif %}">Entries</a>
+  <a href="/accounts" class="{% if page.url == '/accounts/' %}active{% endif %}">Accounts</a>
+  <a href="/categories" class="{% if page.url == '/categories/' %}active{% endif %}">Categories</a>
+  <a href="/recurring" class="{% if page.url == '/recurring/' %}active{% endif %}">Recurring</a>
+  <a href="/scripting" class="{% if page.url == '/scripting/' %}active{% endif %}">Scripting</a>
+  <a href="/backups" class="{% if page.url == '/backups/' %}active{% endif %}">Backups</a>
+  <a href="/tips" class="{% if page.url == '/tips/' %}active{% endif %}">Tips</a>
 </nav>

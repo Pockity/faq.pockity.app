@@ -1,0 +1,106 @@
+@import "variables.css";
+@import "base.css";
+@import "faq.css";
+
+/* Global Adjustments */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  quotes: "“" "”";
+}
+
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+.linked, button:hover {
+  cursor: pointer;
+}
+
+/* Global Components Style Adjustments */
+header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+header #website-title h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+header #website-title h1 a {
+  color: var(--dz-title-color, #000);
+  text-decoration: none;
+}
+
+header #website-title p {
+  color: var(--dz-subtitle-color, #666);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  header .container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
+  header .container nav {
+    margin-left: auto;
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+nav ul a {
+  color: var(--dz-title-color, #000);
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: var(--dz-brand-color, #007aff);
+}
+
+footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--dz-border-color, #eee);
+  padding-top: 2rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: var(--dz-subtext-color, #888);
+  margin-bottom: 0.5rem;
+}
+
+/* Pockity Specific */
+.lp-blur {
+  width: 452px;
+  height: 386px;
+  display: block;
+  position: absolute;
+  background: url('../images/lp/blur.png');
+  z-index: 0;
+}
+
+ul li {
+  list-style: disc;
+}

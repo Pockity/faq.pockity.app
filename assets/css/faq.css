@@ -1,0 +1,232 @@
+header {
+  vertical-align: middle;
+}
+
+header #logo-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header #logo-title img {
+  border-radius: 12px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+header h1 span {
+  font-weight: 400;
+  color: var(--dz-subtitle-color);
+  font-size: 1rem;
+}
+
+header:not(.scrolled) h1 span { 
+  display: none;
+}
+
+body.landing header nav {
+  display: none;
+}
+
+body.landing footer .footlinks a {
+  font-size: inherit;
+}
+
+/*** MAIN ***/
+main {
+  margin-top: 2rem;
+  min-height: calc(100vh - 15rem);
+}
+
+main .page-content {
+  max-width: 100%; 
+  max-width: 75ch;
+  overflow-y: -webkit-paged-x;
+}
+
+main .page-content picture {
+  display: block;
+  margin: 2rem 0;
+}
+
+main .page-content hr {
+  margin-bottom: 1rem;
+}
+
+main .page-content p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+main nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main nav a {
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  color: var(--dz-title-color);
+  display: inline-block;
+}
+
+main nav a:hover {
+  background: var(--dz-grouped-background-color);
+  text-decoration: none;
+}
+
+main nav a.active {
+  background: var(--dz-brand-color);
+  color: #fff;
+}
+
+/* Article Content Spacing (for markdown output) */
+.article-content h1, 
+.article-content h2, 
+.article-content h3, 
+.article-content h4, 
+.article-content h5, 
+.article-content h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.article-content h1:first-child,
+.article-content h2:first-child {
+  margin-top: 0;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.article-content ul, 
+.article-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--dz-brand-color);
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  background: var(--dz-grouped-background-color);
+  border-radius: 0 8px 8px 0;
+}
+
+.article-content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Table Styling */
+.article-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border: 1px solid var(--dz-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.article-content th, 
+.article-content td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid var(--dz-border-color);
+}
+
+.article-content tr:last-child td {
+  border-bottom: none;
+}
+
+.article-content th {
+  font-weight: 700;
+  background: var(--dz-grouped-background-color);
+  color: var(--dz-title-color);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* Code Blocks */
+.article-content pre {
+  background: var(--dz-grouped-background-color);
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--dz-border-color);
+}
+
+.article-content code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+/* Images in content */
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article-content .note {
+  background: var(--dz-grouped-background-color);
+  display: block;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-left: 4px solid var(--dz-brand-color);
+}
+
+.article-content .note p {
+  color: var(--dz-title-color);
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  main .grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  main nav {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  main .grid {
+    display: block;
+  }
+
+  main nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--dz-border-color);
+  }
+
+  main nav a {
+    font-size: 0.85rem;
+  }
+}

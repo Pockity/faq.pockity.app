@@ -1,15 +1,9 @@
-const eleventySass = require("eleventy-sass");
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const path = require("path");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(eleventySass, {
-    sassOptions: {
-      includePaths: [path.join(__dirname, "_sass")]
-    }
-  });
   eleventyConfig.addPlugin(rssPlugin);
 
   // Filters
@@ -43,11 +37,20 @@ module.exports = function (eleventyConfig) {
     return url;
   });
 
+  // Server options
+  eleventyConfig.setServerOptions({
+    domDiff: false
+  });
+
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("assets/js");
   eleventyConfig.addPassthroughCopy("assets/videos");
+  eleventyConfig.addPassthroughCopy("assets/css/*.css");
+
+  // Watch targets
+  eleventyConfig.addWatchTarget(path.join(__dirname, "assets/css"));
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("post", "post.html");

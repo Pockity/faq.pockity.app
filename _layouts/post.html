@@ -5,14 +5,16 @@
   {%- include "header.html" -%}
 
   <main>
-    <article class="page-content no-style"> 
-      {{ content }}
+    <div class="container readable">
+      <article class="page-content article-content"> 
+        {{ content }}
 
-      {%- include "links.html" -%}
-    </article>
-    <section class="page-content">
-      <a href="#" onclick="window.history.back();">Back</a>
-    </section>
+        {%- include "links.html" -%}
+      </article>
+      <section class="page-content mt-1">
+        <a href="#" onclick="window.history.back();">Back</a>
+      </section>
+    </div>
   </main>
 
   {%- include "footer.html" -%}
