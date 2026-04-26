@@ -1,9 +1,14 @@
 ---
 title: Shared Ledgers
-layout: home
+layout: base
 style: landing
 permalink: /ledgers/shared/
 tags: [ledgers]
+eleventyNavigation:
+  key: Shared Ledgers
+  parent: Ledgers
+  order: 3
+toc: true
 ---
 
 ## Shared Ledgers

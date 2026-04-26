@@ -1,8 +1,13 @@
 ---
 title: Account Charts
-layout: home
+layout: base
 permalink: /accounts/charts/
 tags: [accounts]
+eleventyNavigation:
+  key: Account Charts
+  parent: Accounts
+  order: 2
+toc: true
 ---
 
 ### What are Account Charts?

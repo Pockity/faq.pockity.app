@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Pockity FAQ</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <button id="menu-toggle" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <div class="logo">
+        <a href="/"><strong>Pockity</strong> FAQ</a>
+      </div>
+      <div class="header-right">
+        <div class="search-container">
+          <input type="text" placeholder="Search documentation..." aria-label="Search">
+        </div>
+        <nav class="top-nav">
+          <!-- Top navigation links placeholder -->
+        </nav>
+      </div>
+    </header>
+
+    <aside>
+      <nav class="sidebar-nav">
+        {% include "components/sidebar.njk" %}
+      </nav>
+    </aside>
+
+    <main>
+      <div class="content-wrapper">
+        <article class="content-body-container">
+          <header class="content-header">
+            {% include "components/breadcrumbs.njk" %}
+            <h1>{{ title }}</h1>
+          </header>
+          <div class="content-body">
+            {{ content | safe }}
+          </div>
+        </article>
+        
+        {% if toc %}
+          <aside class="on-page-toc">
+            <div class="toc-header">ON THIS PAGE</div>
+            {{ content | toc | safe }}
+          </aside>
+        {% endif %}
+      </div>
+    </main>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>

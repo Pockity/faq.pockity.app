@@ -1,25 +1,67 @@
 ---
 layout: home
-style: landing
+title: Pockity
+toc: true
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
 
-## Frequently Asked Questions, Guides and Tips
+<div class="feature-row">
+  <div class="feature-image">
+    <img src="/assets/images/ledgers/focusmode.png" alt="Pockity Ledgers in Focus Mode" style="border-radius: 12px;">
+  </div>
+  <div class="feature-text">
+    <h2>Organize with Ledgers</h2>
+    <p>Ledgers are the foundation of Pockity. Use them to separate your personal finances from business expenses, or create shared ledgers to manage household spending with family. With Pockity+, you can create unlimited ledgers, each with its own base currency.</p>
+    <a href="/ledgers/" class="feature-link">Intro to Ledgers <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+  </div>
+</div>
 
-<picture style="margin-top: 2rem;">
-  <source media="(max-width: 600px)" srcset="/assets/images/faq-light-400w.jpg 1x, /assets/images/faq-light-800w.jpg 2x, /assets/images/faq-light-1600w.jpg 3x">
-  <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/faq-light-800w.jpg 1x, /assets/images/faq-light-1600w.jpg 2x, /assets/images/faq-light@3x.jpg 3x">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark-400w.jpg 1x, /assets/images/faq-dark-800w.jpg 2x">
-  <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark-800w.jpg 1x, /assets/images/faq-dark@2x.jpg 2x">
-  <source media="(min-width: 801px) and (prefers-color-scheme: dark)" srcset="/assets/images/faq-dark.jpg 1x, /assets/images/faq-dark@2x.jpg 2x, /assets/images/faq-dark@3x.jpg 3x">
-  <img src="/assets/images/faq-light.jpg" srcset="/assets/images/faq-light@2x.jpg 2x, /assets/images/faq-light@3x.jpg 3x" width="1130" height="712" alt="Pockity's ledger timeline displayed on an iPad Pro 12.9 inches and iPhone 14 Pro"/>
-</picture>
+<div class="feature-row">
+  <div class="feature-image">
+    <img src="/assets/images/entries/browser-1.png" alt="Browser Import and NLP" style="border-radius: 12px;">
+  </div>
+  <div class="feature-text">
+    <h2>Fast and flexible tracking</h2>
+    <p>Log expenses in seconds using Natural Language Processing—just type "25 Coffee at Starbucks" and Pockity handles the rest. Beyond manual entry, use the Browser Import tool to bring in transactions from your bank or automate entries via SMS and email notifications.</p>
+    <a href="/entries/" class="feature-link">Intro to Entries <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+  </div>
+</div>
 
-Pockity is a simple Budgeting and Expense tracking application for iOS, iPadOS (and macOS, coming later this year). 
+<div class="feature-row">
+  <div class="feature-image">
+    <img src="/assets/images/categories/header.jpg" alt="Budgets and Categories" style="border-radius: 12px;">
+  </div>
+  <div class="feature-text">
+    <h2>Stay on track with Budgets</h2>
+    <p>Define your spending habits with granular categories and monthly budgets. Pockity's Double-Entry system ensures every penny is accounted for, while visual progress bars and rollover budgets help you stay within your limits and plan for the future.</p>
+    <a href="/categories/" class="feature-link">Intro to Budgets <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+  </div>
+</div>
 
-It aims to form a habit of tracking expenses, setting up budgets, and managing spending to stick to those budgets. 
+<div class="feature-row">
+  <div class="feature-image">
+    <img src="/assets/images/scripting/sms-automation.png" alt="Scripting and Automation" style="border-radius: 12px;">
+  </div>
+  <div class="feature-text">
+    <h2>Power-user Automation</h2>
+    <p>Take control of your data with industry-leading automation tools. Use AppleScript on macOS to generate custom reports, trigger Apple Shortcuts for hands-free logging, or leverage our Model Context Protocol (MCP) server to interact with your financial data using AI.</p>
+    <a href="/scripting/" class="feature-link">Intro to Automation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+  </div>
+</div>
 
-It uses the <a href="https://en.wikipedia.org/wiki/Double-entry_bookkeeping" data-tooltip="Read more on Wikipedia">Double Entry Book-Keeping System</a>, and how Pockity uses it is explained in detail in [this guide]().
+<div class="bottom-summary">
+  <p>This guide helps you master Pockity on your iPhone, iPad, and Mac. To explore specific topics, use the sidebar on the left or click the Table of Contents button at the top of this page.</p>
+  <p>If you have further questions, please get in touch at <a href="mailto:support@pockity.app">support@pockity.app</a>.</p>
+</div>
 
-### Additional Support 
-
-If you don't find information about a certain topic, or have more questions about the app, please get in touch by sending an email to [support@pockity.app](mailto:support@pockity.app).
+<div class="bottom-nav">
+  <a href="/ledgers/" class="nav-next">
+    <div class="nav-content">
+      <span class="nav-label">Next</span>
+      <span class="nav-title">Get started with Ledgers</span>
+    </div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </a>
+</div>

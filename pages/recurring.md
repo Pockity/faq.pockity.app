@@ -1,8 +1,12 @@
 ---
 title: Recurring
-layout: home
+layout: category
 permalink: /recurring/
 tags: [recurring]
+eleventyNavigation:
+  key: Recurring
+  order: 8
+toc: true
 ---
 
 ## Recurring

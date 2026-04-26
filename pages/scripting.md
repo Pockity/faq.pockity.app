@@ -1,8 +1,12 @@
 ---
 title: Scripting & Automation
-layout: home
+layout: base
 permalink: /scripting/
 tags: [tips]
+eleventyNavigation:
+  key: Scripting & Automation
+  order: 9
+toc: true
 ---
 
 ## Scripting & Automation

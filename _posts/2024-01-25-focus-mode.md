@@ -1,9 +1,14 @@
 ---
 title: Focus Modes
-layout: home
+layout: base
 style: landing
 permalink: /ledgers/focusmode/
 tags: [ledgers]
+eleventyNavigation:
+  key: Focus Modes
+  parent: Ledgers
+  order: 4
+toc: true
 ---
 
 ## Focus Mode

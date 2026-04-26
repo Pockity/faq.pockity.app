@@ -1,8 +1,13 @@
 ---
 title: Sankey Chart
-layout: home
+layout: base
 permalink: /ledgers/sankey/
 tags: [ledgers]
+eleventyNavigation:
+  key: Sankey Chart
+  parent: Ledgers
+  order: 6
+toc: true
 ---
 
 ### Sankey Chart Visualizations

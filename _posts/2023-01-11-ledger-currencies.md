@@ -1,8 +1,13 @@
 ---
 title: "Currencies"
 permalink: /ledgers/currencies/
-layout: home
+layout: base
 tags: [ledgers]
+eleventyNavigation:
+  key: Currencies
+  parent: Ledgers
+  order: 2
+toc: true
 ---
 
 ## Ledger Currencies

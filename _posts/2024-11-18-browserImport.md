@@ -1,9 +1,13 @@
 ---
 title: Expense Importer
-layout: home
+layout: base
 style: landing
 permalink: /entries/browser/
 tags: [entries]
+eleventyNavigation:
+  key: Expense Importer
+  parent: Entries
+  order: 3
 ---
 
 ## Expense Importer (Safari)

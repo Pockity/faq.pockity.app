@@ -1,8 +1,13 @@
 ---
 title: Recurring Items
-layout: home
+layout: base
 permalink: /recurring/howto/
 tags: [recurring]
+eleventyNavigation:
+  key: Recurring Items
+  parent: Recurring
+  order: 1
+toc: true
 ---
 
 ### What are Recurring Items?

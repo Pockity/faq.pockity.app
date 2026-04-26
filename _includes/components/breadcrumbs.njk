@@ -1,0 +1,17 @@
+<nav class="breadcrumbs">
+  <a href="/">Pockity FAQ</a>
+  {% if eleventyNavigation and eleventyNavigation.key and eleventyNavigation.key != "Home" %}
+    {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+    {% for crumb in breadcrumbs %}
+      {% if crumb.key != "Home" %}
+        <span class="separator">/</span>
+        <a href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+      {% endif %}
+    {% endfor %}
+    <span class="separator">/</span>
+    <span class="current">{{ title }}</span>
+  {% elif title != "Frequently Asked Questions" and title != "Home" %}
+    <span class="separator">/</span>
+    <span class="current">{{ title }}</span>
+  {% endif %}
+</nav>

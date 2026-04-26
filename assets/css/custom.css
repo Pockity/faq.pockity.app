@@ -1,0 +1,7 @@
+.header-anchor, .content-body a[href^="#"] {
+  color: var(--text-color);
+}
+
+.feature-image img {
+  border: none !important;
+}

@@ -1,9 +1,13 @@
 ---
 title: Ledgers
-layout: home
+layout: category
 style: landing
 permalink: /ledgers/
 tags: [ledgers]
+eleventyNavigation:
+  key: Ledgers
+  order: 6
+toc: true
 ---
 
 ## Ledgers

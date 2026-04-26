@@ -1,9 +1,14 @@
 ---
 title: Creating Ledgers
-layout: home
+layout: base
 style: landing
 permalink: /ledgers/creating/
 tags: [ledgers]
+eleventyNavigation:
+  key: Creating Ledgers
+  parent: Ledgers
+  order: 1
+toc: true
 ---
 
 ## Creating Ledgers

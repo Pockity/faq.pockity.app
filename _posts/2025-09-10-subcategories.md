@@ -1,8 +1,13 @@
 ---
 title: Nested and Sub-Categories
-layout: home
+layout: base
 permalink: /categories/nested-subcategories/
 tags: [categories]
+eleventyNavigation:
+  key: Nested and Sub-Categories
+  parent: Categories
+  order: 2
+toc: true
 ---
 
 ### Nested and Sub-Categories

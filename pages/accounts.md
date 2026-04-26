@@ -1,8 +1,11 @@
 ---
 title: Accounts
-layout: home
+layout: category
 permalink: /accounts/
-tags: [accounts]
+eleventyNavigation:
+  key: Accounts
+  order: 2
+toc: false
 ---
 
 ## Accounts

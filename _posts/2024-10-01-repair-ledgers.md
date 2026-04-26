@@ -1,9 +1,13 @@
 ---
 title: Repair Ledgers
-layout: home
+layout: base
 style: landing
 permalink: /ledgers/repairs/
 tags: [ledgers]
+eleventyNavigation:
+  key: Repair Ledgers
+  parent: Ledgers
+  order: 5
 ---
 
 ## Repair Ledgers

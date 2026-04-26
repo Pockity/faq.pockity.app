@@ -1,8 +1,12 @@
 ---
 title: Categories
-layout: home
+layout: category
 permalink: /categories/
 tags: [categories]
+eleventyNavigation:
+  key: Categories
+  order: 4
+toc: true
 ---
 
 ## Categories

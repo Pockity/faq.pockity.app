@@ -1,8 +1,12 @@
 ---
 title: Tips
-layout: home
+layout: base
 permalink: /tips/
 tags: [tips]
+eleventyNavigation:
+  key: Tips
+  order: 10
+toc: false
 ---
 
 ## Tips

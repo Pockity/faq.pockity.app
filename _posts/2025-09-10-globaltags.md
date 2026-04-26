@@ -1,8 +1,13 @@
 ---
 title: Global Tags
-layout: home
+layout: base
 permalink: /entries/tags/
 tags: [entries]
+eleventyNavigation:
+  key: Global Tags
+  parent: Entries
+  order: 5
+toc: true
 ---
 
 ### Global Tags: Tagging System for Entries and Filtering

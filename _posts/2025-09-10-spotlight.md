@@ -1,8 +1,13 @@
 ---
 title: Spotlight Search Integration
-layout: home
+layout: base
 permalink: /entries/spotlight/
 tags: [entries]
+eleventyNavigation:
+  key: Spotlight Search Integration
+  parent: Entries
+  order: 6
+toc: true
 ---
 
 ### Spotlight Search Integration

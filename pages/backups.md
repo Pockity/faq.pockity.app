@@ -1,8 +1,12 @@
 ---
 title: Backups
-layout: home
+layout: base
 permalink: /backups/
 tags: [tips]
+eleventyNavigation:
+  key: Backups
+  order: 3
+toc: false
 ---
 
 ## Backups

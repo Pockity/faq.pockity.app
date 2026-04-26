@@ -1,8 +1,12 @@
 ---
 title: Entries
-layout: home
+layout: category
 permalink: /entries/
 tags: [entries]
+eleventyNavigation:
+  key: Entries
+  order: 5
+toc: true
 ---
 
 ## Entries

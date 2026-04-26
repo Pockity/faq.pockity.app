@@ -1,8 +1,12 @@
 ---
 title: Pockity+
-layout: home
+layout: base
 permalink: /pockityplus/
 tags: [tips]
+eleventyNavigation:
+  key: Pockity+
+  order: 7
+toc: false
 ---
 
 ## Pockity+

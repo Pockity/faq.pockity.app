@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Pockity FAQ</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="home-layout">
+  <div class="app-container">
+    <main class="home-main">
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1><a href="/">{{ title }}</a></h1>
+            <p class="hero-subtitle">Budgeting and expense tracking</p>
+            <div class="hero-toc-link-wrapper">
+              <button class="hero-toc-link toc-trigger">Table of Contents
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </button>
+            </div>
+          </div>
+          <div class="hero-app-icon">
+            <img src="/assets/images/appicon/appicon@3x.png" width="144" height="144" alt="Pockity Icon">
+          </div>
+        </div>
+      </section>
+
+      <div class="home-content">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <footer class="global-footer">
+      <div class="global-footer-container">
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            Copyright © 2026 Pockity. All rights reserved.
+          </div>
+          <div class="footer-links">
+            <a href="https://pockity.app">pockity.app</a>
+            <a href="mailto:support@pockity.app">Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  {% include "components/toc-modal.njk" %}
+  <script src="/js/main.js"></script>
+</body>
+</html>

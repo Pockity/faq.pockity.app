@@ -1,8 +1,13 @@
 ---
 title: "Transfers"
 permalink: /entries/transfers/
-layout: home
+layout: base
 tags: [entries]
+eleventyNavigation:
+  key: Transfers
+  parent: Entries
+  order: 1
+toc: true
 ---
 
 ## Account Transfers 

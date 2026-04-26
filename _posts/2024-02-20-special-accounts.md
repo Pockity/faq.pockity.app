@@ -1,9 +1,13 @@
 ---
 title: Special Accounts
-layout: home
+layout: base
 style: landing
 permalink: /accounts/special/
 tags: [accounts]
+eleventyNavigation:
+  key: Special Accounts
+  parent: Accounts
+  order: 1
 ---
 
 ## Special Accounts

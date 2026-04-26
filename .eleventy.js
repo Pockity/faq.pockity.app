@@ -2,9 +2,15 @@ const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const path = require("path");
+const dzDocsTheme = require("@dz/docs-theme");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rssPlugin);
+  
+  // Add the DZDocsTheme plugin
+  eleventyConfig.addPlugin(dzDocsTheme, {
+    themePath: "node_modules/@dz/docs-theme"
+  });
 
   // Filters
   eleventyConfig.addFilter("dateToRfc3339", rssPlugin.dateToRfc3339);
@@ -62,19 +68,16 @@ module.exports = function (eleventyConfig) {
     excerpt_alias: 'excerpt',
   });
 
-  // Initialize the Markdown parser
+  // Add the custom filter
   const md = new markdownIt({
-    html: true, // Enable HTML tags in source
-    breaks: true, // Convert '\n' in source into <br>
-    linkify: true // Autoconvert URL-like text to links
+    html: true,
+    breaks: true,
+    linkify: true
   });
 
-  // Add the custom filter
   eleventyConfig.addFilter("markdown", (content) => {
     return md.render(content);
   });
-
-  eleventyConfig.setLibrary("md", md);
 
   return {
     dir: {
