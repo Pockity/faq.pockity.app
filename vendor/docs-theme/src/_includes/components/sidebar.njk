@@ -1,0 +1,18 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+{% macro renderNavListItem(entry) %}
+  <li {%- if entry.url == page.url %} class="active-entry"{% endif %}>
+    {% if entry.children.length > 0 %}
+      <strong>{{ entry.title }}</strong>
+      <ul>
+        {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+      </ul>
+    {% else %}
+      <a href="{{ entry.url | url }}" {%- if entry.url == page.url %} class="active"{% endif %}>{{ entry.title }}</a>
+    {% endif %}
+  </li>
+{% endmacro %}
+
+<ul>
+  {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>

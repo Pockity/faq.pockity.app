@@ -1,0 +1,15 @@
+<nav class="breadcrumbs">
+  <a href="/">Documentation</a>
+  {% if eleventyNavigation and eleventyNavigation.key %}
+    {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+    {% for crumb in breadcrumbs %}
+      <span class="separator">/</span>
+      <a href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+    {% endfor %}
+    <span class="separator">/</span>
+    <span class="current">{{ title }}</span>
+  {% elif title != site.title %}
+    <span class="separator">/</span>
+    <span class="current">{{ title }}</span>
+  {% endif %}
+</nav>

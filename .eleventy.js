@@ -2,16 +2,15 @@ const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const path = require("path");
-const dzDocsTheme = require("@dz/docs-theme");
+const docsTheme = require("./vendor/docs-theme");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rssPlugin);
   
   // Add the DZDocsTheme plugin
-  eleventyConfig.addPlugin(dzDocsTheme, {
-    themePath: "node_modules/@dz/docs-theme"
+  eleventyConfig.addPlugin(docsTheme, {
+    themePath: "vendor/docs-theme"
   });
-
   // Filters
   eleventyConfig.addFilter("dateToRfc3339", rssPlugin.dateToRfc3339);
   eleventyConfig.addFilter("dateToRfc822", rssPlugin.dateRfc822);
@@ -60,23 +59,14 @@ module.exports = function (eleventyConfig) {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("post", "post.html");
-  eleventyConfig.addLayoutAlias("home", "home.html");
-  eleventyConfig.addLayoutAlias("default", "default.html");
+  eleventyConfig.addLayoutAlias("home", "home.njk");
+  eleventyConfig.addLayoutAlias("base", "base.njk");
+  eleventyConfig.addLayoutAlias("category", "category.njk");
+  eleventyConfig.addLayoutAlias("default", "base.njk");
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_alias: 'excerpt',
-  });
-
-  // Add the custom filter
-  const md = new markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  });
-
-  eleventyConfig.addFilter("markdown", (content) => {
-    return md.render(content);
   });
 
   return {

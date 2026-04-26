@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.title }}</title>
+  
+  <meta name="description" content="{{ description or site.description }}">
+  
+  {# Open Graph #}
+  <meta property="og:title" content="{{ site.title }} {{ site.subtitle }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  
+  {# Twitter #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }} {{ site.subtitle }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="home-layout">
+  <div class="app-container">
+    <main class="home-main">
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1><a href="/">{{ site.title }} {{ site.subtitle }}</a></h1>
+            <p class="hero-subtitle">{{ site.platform }}</p>
+            <div class="hero-toc-link-wrapper">
+              <button class="hero-toc-link toc-trigger">Table of Contents
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </button>
+            </div>
+          </div>
+          <div class="hero-app-icon">
+            <svg width="144" height="144" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="128" height="128" rx="28" fill="url(#hero_gradient)"/>
+              <path d="M64 40V88M40 64H88" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="hero_gradient" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF9500"/>
+                  <stop offset="1" stop-color="#FFCC00"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <div class="home-content">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <footer class="global-footer">
+      <div class="global-footer-container">
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            Copyright © 2026 {{ site.company }} All rights reserved.
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  {% include "components/toc-modal.njk" %}
+  <script src="/js/main.js"></script>
+</body>
+</html>

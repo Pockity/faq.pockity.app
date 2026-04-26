@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.title }}</title>
+  
+  <meta name="description" content="{{ description or site.description }}">
+  
+  {# Open Graph #}
+  <meta property="og:title" content="{{ title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  
+  {# Twitter #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="guide-header">
+      <div class="guide-header-container">
+        <div class="guide-title">{{ site.title }} {{ site.subtitle }} {{ site.platform }}</div>
+        <div class="guide-actions">
+          {% include "components/supportLink.njk" %}
+        </div>
+      </div>
+    </div>
+
+    <main class="article-main">
+      <div class="article-container">
+        <aside class="sidebar-aside">
+          <nav class="sidebar-nav">
+            {% include "components/sidebar.njk" %}
+          </nav>
+        </aside>
+
+        <article class="content-body-container">
+          <header class="content-header">
+            {% include "components/breadcrumbs.njk" %}
+            <div class="inline-toc-link">
+              <button class="toc-trigger" id="open-toc">Table of Contents 
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </button>
+            </div>
+            <h1>{{ title }}</h1>
+          </header>
+          <div class="content-body">
+            {{ content | safe }}
+          </div>
+
+          {% set relatedPages = collections.all | filterByParent(eleventyNavigation.parent, page.url) %}
+          {% if relatedPages.length > 0 %}
+            <section class="see-also">
+              <h2>See also</h2>
+              <ul class="see-also-list">
+                {% for related in relatedPages %}
+                  <li><a href="{{ related.url }}">{{ related.data.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+        </article>
+      </div>
+    </main>
+
+    <footer class="global-footer">
+      <div class="global-footer-container">
+        <div class="footer-bottom">
+          <div class="footer-copyright">Copyright © 2026 {{ site.company }} All rights reserved.</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  {% include "components/toc-modal.njk" %}
+  <script src="/js/main.js"></script>
+</body>
+</html>
