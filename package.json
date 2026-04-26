@@ -9,7 +9,7 @@
     "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@dz/docs-theme": "git+https://github.com/dezinezync/DZDocsTheme.git",
+    "@dz/docs-theme": "file:./theme",
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "luxon": "^3.7.2",
