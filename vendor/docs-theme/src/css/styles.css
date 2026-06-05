@@ -118,6 +118,8 @@ a:hover {
 .content-body-container {
   flex: 1;
   max-width: 740px;
+  min-width: 0;
+  overflow-x: hidden;
   background-color: transparent;
   border-radius: 0;
   padding: 0;
@@ -551,14 +553,17 @@ code {
 pre {
   position: relative;
   margin: 2rem 0;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 pre code {
   display: block;
   padding: 1.5em;
-  overflow-x: auto;
+  overflow-x: visible;
   border-radius: 12px;
   line-height: 1.4;
+  white-space: pre;
 }
 
 .copy-button {
@@ -789,16 +794,25 @@ pre:hover .copy-button {
     text-align: center;
     gap: 40px;
   }
-  
+
   .feature-row, .feature-row:nth-child(even) {
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
   }
-  
+
+  .feature-image img {
+    margin: 0;
+  }
+
+  .home-content {
+    gap: 56px;
+    padding: 48px 20px;
+  }
+
   .hero-section h1 {
     font-size: 2.25rem;
   }
-  
+
   .feature-text h2 {
     font-size: 1.75rem;
   }
