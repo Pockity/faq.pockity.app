@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig, options = {}) {
       permalink: markdownItAnchor.permalink.headerLink()
     })
     .use(markdownItAttrs);
-    
+
   // Shortcodes
   eleventyConfig.addPairedShortcode("disclosure", function(content, title) {
     return `

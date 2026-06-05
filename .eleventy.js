@@ -1,16 +1,24 @@
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require("markdown-it-attrs");
 const path = require("path");
 const docsTheme = require("./vendor/docs-theme");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rssPlugin);
-  
+
   // Add the DZDocsTheme plugin
   eleventyConfig.addPlugin(docsTheme, {
     themePath: "vendor/docs-theme"
   });
+
+  // Configure markdown-it at the top level so it takes effect after all plugins
+  const md = markdownIt({ html: true, breaks: true, linkify: true })
+    .use(markdownItAnchor, { permalink: markdownItAnchor.permalink.headerLink() })
+    .use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", md);
   // Filters
   eleventyConfig.addFilter("dateToRfc3339", rssPlugin.dateToRfc3339);
   eleventyConfig.addFilter("dateToRfc822", rssPlugin.dateRfc822);
