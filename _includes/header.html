@@ -1,18 +1,20 @@
 <header>
 	<div class="container">
 		<div id="logo-title">
-			<picture class="linked" onclick="window.location.href='/'">
-				<img 
-          src="{{ "/assets/images/appicon/appicon.png" | absolute_url }}" 
-          srcset="{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }} 2x, {{ "/assets/images/appicon/appicon@3x.png" | absolute_url }} 3x" 
-          width="48" 
+			<a href="/">
+				<picture class="linked">
+					<img
+          src="{{ "/assets/images/appicon/appicon.png" | absolute_url }}"
+          srcset="{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }} 2x, {{ "/assets/images/appicon/appicon@3x.png" | absolute_url }} 3x"
+          width="48"
           height="48"
           alt="Pockity App Icon"
         />
-			</picture>
+				</picture>
+			</a>
 
 			<h1><a href="/">{{ site.title }}</a> <span>{{ site.caption }}</span></h1>
 		</div>
 
-	</div>  
+	</div>
 </header>

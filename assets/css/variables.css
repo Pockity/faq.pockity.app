@@ -4,8 +4,8 @@
   --dz-grouped-background-color: #f2f2f7;
   --dz-border-color: #d1d1d6;
   --dz-title-color: #1c1c1e;
-  --dz-subtitle-color: #8e8e93;
-  --dz-subtext-color: #aeaeb2;
+  --dz-subtitle-color: #6e6e73;
+  --dz-subtext-color: #6e6e73;
   --color: #1c1c1e;
   --font-size: 18pt;
 }
@@ -18,7 +18,7 @@
     --dz-border-color: #3a3a3c;
     --dz-title-color: #f2f2f7;
     --dz-subtitle-color: #8e8e93;
-    --dz-subtext-color: #636366;
+    --dz-subtext-color: #9e9ea3;
     --color: #f2f2f7;
   }
 }

@@ -3,7 +3,7 @@
 {% macro renderNavListItem(entry) %}
   <li {%- if entry.url == page.url %} class="active-entry"{% endif %}>
     {% if entry.children.length > 0 %}
-      <strong>{{ entry.title }}</strong>
+      <h3>{{ entry.title }}</h3>
       <ul>
         {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
       </ul>

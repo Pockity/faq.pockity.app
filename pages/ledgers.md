@@ -23,7 +23,7 @@ Upon initial setup, a default **Primary Ledger** is created and it linked to the
 
 With [Pockity+](/pockityplus), you can create as many ledgers as you need, each with its own currency. 
 
-#### Segmenting Accounts 
+### Segmenting Accounts 
 
 Ledgers are a useful abstraction to segment different accounts into their own collections. 
 

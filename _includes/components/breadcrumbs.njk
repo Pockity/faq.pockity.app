@@ -1,4 +1,4 @@
-<nav class="breadcrumbs">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
   <a href="/">Pockity FAQ</a>
   {% if eleventyNavigation and eleventyNavigation.key and eleventyNavigation.key != "Home" %}
     {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
@@ -9,9 +9,9 @@
       {% endif %}
     {% endfor %}
     <span class="separator">/</span>
-    <span class="current">{{ title }}</span>
+    <span class="current" aria-current="page">{{ title }}</span>
   {% elif title != "Frequently Asked Questions" and title != "Home" %}
     <span class="separator">/</span>
-    <span class="current">{{ title }}</span>
+    <span class="current" aria-current="page">{{ title }}</span>
   {% endif %}
 </nav>

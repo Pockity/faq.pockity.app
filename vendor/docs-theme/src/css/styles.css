@@ -3,8 +3,8 @@
   --bg-color: #fff;
   --card-bg-color: #ffffff;
   --text-color: #1d1d1f;
-  --secondary-text-color: #86868b;
-  --link-color: #007aff;
+  --secondary-text-color: #6e6e73;
+  --link-color: #0066cc;
   --border-color: #e6e6e6;
   --subdued-bg: #f5f5f7;
   --code-bg: #f5f5f7;
@@ -50,6 +50,29 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   -webkit-font-smoothing: antialiased;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  z-index: 999;
+  padding: 1rem 2rem;
+  background: var(--card-bg-color);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--link-color);
+  border-radius: 0 0 12px 0;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
 }
 
 a {
@@ -254,13 +277,18 @@ a:hover {
     display: block;
     padding: 0;
     border: none;
+    position: relative;
   }
 
-  .content-body td + td {
-    margin-top: 8px;
-    padding-top: 10px;
-    border-top: 1px solid var(--border-color);
+  .content-body td[data-label]:before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
   }
 }
 
@@ -465,7 +493,7 @@ a:hover {
 .callout-note .callout-label { color: #0066cc; }
 
 .callout-important { background-color: rgba(255, 149, 0, 0.08); }
-.callout-important .callout-label { color: #cc7600; }
+.callout-important .callout-label { color: #a65d00; }
 
 .callout-warning { background-color: rgba(255, 59, 48, 0.08); }
 .callout-warning .callout-label { color: #d70015; }
@@ -524,11 +552,11 @@ img, video {
 
 @media (prefers-color-scheme: dark) {
   .sidebar-nav a.active {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
   }
 }
 
-.sidebar-nav strong {
+.sidebar-nav h3 {
   display: block;
   font-size: 0.75rem;
   font-weight: 600;
@@ -655,6 +683,10 @@ pre code {
 }
 
 pre:hover .copy-button {
+  opacity: 1;
+}
+
+pre:focus-within .copy-button {
   opacity: 1;
 }
 

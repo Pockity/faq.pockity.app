@@ -22,14 +22,14 @@ toc: true
   <p>Creating additional ledgers requires Pockity+</p>
 </div>
 
-#### Create a New Ledger on iOS:
+### Create a New Ledger on iOS:
 
 1. In the main ledgers list view, long press on the "New" button in the bottom toolbar. 
 2. From the context menu, tap on "New Ledger"
 3. Fill out the name for the ledger. A default currency, based on your iOS locale, will be assigned. You may change this if required. 
 4. Tap on "Done"
 
-#### Create a New Ledger on macOS:
+### Create a New Ledger on macOS:
 
 1. With Pockity.app focused, from the File Menu, select "New Ledger"
 2. In the form presented, fill out the name for the ledger. A default currency, based on your iOS locale, will be assigned. You may change this if required. 

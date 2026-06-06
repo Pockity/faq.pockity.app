@@ -44,7 +44,6 @@ main {
 main .page-content {
   max-width: 100%; 
   max-width: 75ch;
-  overflow-y: -webkit-paged-x;
 }
 
 main .page-content picture {

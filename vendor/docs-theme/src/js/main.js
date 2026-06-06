@@ -1,10 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle');
   const aside = document.querySelector('.sidebar-aside');
-  
+
   if (menuToggle && aside) {
+    aside.id = 'mobile-sidebar';
+    menuToggle.setAttribute('aria-controls', 'mobile-sidebar');
+    menuToggle.setAttribute('aria-expanded', 'false');
+
+    const closeSidebar = () => {
+      aside.classList.remove('show');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.focus();
+    };
+
     menuToggle.addEventListener('click', () => {
-      aside.classList.toggle('show');
+      const isOpen = aside.classList.toggle('show');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && aside.classList.contains('show')) {
+        closeSidebar();
+      }
     });
   }
 
@@ -14,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.createElement('button');
     button.className = 'copy-button';
     button.innerText = 'Copy';
-    
+
     button.addEventListener('click', () => {
       const code = block.querySelector('code').innerText;
       navigator.clipboard.writeText(code).then(() => {
@@ -24,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2000);
       });
     });
-    
+
     block.appendChild(button);
   });
 
@@ -34,9 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const tocCloseBtn = document.getElementById('close-toc');
 
   if (tocModal && tocTriggers.length > 0) {
+    tocModal.setAttribute('aria-modal', 'true');
+
+    let tocTrigger = null;
+
     tocTriggers.forEach(trigger => {
       trigger.addEventListener('click', (e) => {
         e.preventDefault();
+        tocTrigger = trigger;
         tocModal.showModal();
         document.body.style.overflow = 'hidden';
       });
@@ -44,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (tocCloseBtn) {
       tocCloseBtn.addEventListener('click', () => {
-        tocModal.close();
+        tocModal.close(tocTrigger);
         document.body.style.overflow = '';
       });
     }
@@ -58,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.clientY < dialogDimensions.top ||
         e.clientY > dialogDimensions.bottom
       ) {
-        tocModal.close();
+        tocModal.close(tocTrigger);
         document.body.style.overflow = '';
       }
     });

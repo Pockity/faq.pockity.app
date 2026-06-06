@@ -141,36 +141,36 @@ Once configured, the following tools become available for Pockity:
   </thead>
   <tbody>
     <tr>
-      <td><code>pockity_list_ledgers</code></td>
-      <td>List all available ledger names and IDs.</td>
+      <td data-label="Tool"><code>pockity_list_ledgers</code></td>
+      <td data-label="Description">List all available ledger names and IDs.</td>
     </tr>
     <tr>
-      <td><code>pockity_get_accounts</code></td>
-      <td>Get all accounts and their balances for a specific ledger.</td>
+      <td data-label="Tool"><code>pockity_get_accounts</code></td>
+      <td data-label="Description">Get all accounts and their balances for a specific ledger.</td>
     </tr>
     <tr>
-      <td><code>pockity_get_categories</code></td>
-      <td>Get all categories for a ledger.</td>
+      <td data-label="Tool"><code>pockity_get_categories</code></td>
+      <td data-label="Description">Get all categories for a ledger.</td>
     </tr>
     <tr>
-      <td><code>pockity_get_entries</code></td>
-      <td>Retrieve transactions from a ledger (sorted by date).</td>
+      <td data-label="Tool"><code>pockity_get_entries</code></td>
+      <td data-label="Description">Retrieve transactions from a ledger (sorted by date).</td>
     </tr>
     <tr>
-      <td><code>pockity_create_entry</code></td>
-      <td>Create a new, validated transaction in a ledger.</td>
+      <td data-label="Tool"><code>pockity_create_entry</code></td>
+      <td data-label="Description">Create a new, validated transaction in a ledger.</td>
     </tr>
     <tr>
-      <td><code>pockity_create_draft_entry</code></td>
-      <td>Quickly create a draft entry to be finalized later.</td>
+      <td data-label="Tool"><code>pockity_create_draft_entry</code></td>
+      <td data-label="Description">Quickly create a draft entry to be finalized later.</td>
     </tr>
     <tr>
-      <td><code>pockity_sum_entries</code></td>
-      <td>Compute the total spending or income for a set of entries.</td>
+      <td data-label="Tool"><code>pockity_sum_entries</code></td>
+      <td data-label="Description">Compute the total spending or income for a set of entries.</td>
     </tr>
     <tr>
-      <td><code>pockity_primary_ledger_summary</code></td>
-      <td>Get a quick overview of your primary ledger.</td>
+      <td data-label="Tool"><code>pockity_primary_ledger_summary</code></td>
+      <td data-label="Description">Get a quick overview of your primary ledger.</td>
     </tr>
   </tbody>
 </table>

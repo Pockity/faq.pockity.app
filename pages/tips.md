@@ -23,4 +23,4 @@ toc: false
 - **Automation**
   - [Scripting & Automation](/scripting/)
 
-<p style="opacity:0;" aria-hidden="true">This is placeholder text for presenting a correct layout. This is placeholder text for presenting a correct layout.</p>
+<p style="visibility:hidden;" aria-hidden="true">This is placeholder text for presenting a correct layout. This is placeholder text for presenting a correct layout.</p>

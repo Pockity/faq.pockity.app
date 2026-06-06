@@ -32,6 +32,6 @@ Pockity+ is a separate purchase for the iOS and macOS apps. This brings four IAP
 
 Pockity+ purchased for one platform is not transferrable to another platform.  
 
-##### Footnotes
+### Footnotes
 1. Pockity+ is not required for accepting invitations to shared ledgers<sup><a id="fnre-1" href="#fnref-1">1</a></sup>
 

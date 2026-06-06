@@ -22,7 +22,7 @@ When editing an existing ledger, the new currency will only be applied to all fu
 
 When creating a new entry in a ledger with a custom currency, the entry's amount will default to that currency. You can always change this to a different currency, supported by the app, and the app will automatically convert the amount to the ledger's currency. 
 
-#### Example:
+### Example:
 - Ledger currency: USD 
 - Entry amount: EUR 25,00
 - Localized Value: USD 26.83 

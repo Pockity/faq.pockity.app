@@ -1,5 +1,10 @@
 .header-anchor, .content-body a[href^="#"] {
   color: var(--text-color);
+  transition: opacity 0.2s;
+}
+
+.header-anchor:hover, .content-body a[href^="#"]:hover {
+  opacity: 1;
 }
 
 .feature-image img {

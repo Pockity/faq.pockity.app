@@ -33,24 +33,24 @@ When you tap to pay with Apple Pay, iOS fires a "When I tap" automation in the S
   </thead>
   <tbody>
     <tr>
-      <td>Merchant name</td>
-      <td>Wallet transaction</td>
-      <td>Entry title &amp; location name</td>
+      <td data-label="Field">Merchant name</td>
+      <td data-label="Source">Wallet transaction</td>
+      <td data-label="Used for">Entry title &amp; location name</td>
     </tr>
     <tr>
-      <td>Amount</td>
-      <td>Wallet transaction</td>
-      <td>Entry amount</td>
+      <td data-label="Field">Amount</td>
+      <td data-label="Source">Wallet transaction</td>
+      <td data-label="Used for">Entry amount</td>
     </tr>
     <tr>
-      <td>Card name</td>
-      <td>Wallet transaction</td>
-      <td>Matched to an Account in Pockity</td>
+      <td data-label="Field">Card name</td>
+      <td data-label="Source">Wallet transaction</td>
+      <td data-label="Used for">Matched to an Account in Pockity</td>
     </tr>
     <tr>
-      <td>Your location (optional)</td>
-      <td>"Get Current Location" action</td>
-      <td>Attached to the entry as a map pin</td>
+      <td data-label="Field">Your location (optional)</td>
+      <td data-label="Source">"Get Current Location" action</td>
+      <td data-label="Used for">Attached to the entry as a map pin</td>
     </tr>
   </tbody>
 </table>
@@ -79,13 +79,36 @@ This is a one-time setup in the Shortcuts app on your iPhone.
 3. Select **Save Wallet Transaction as Draft**.
 4. The action will appear with the following fields to configure:
 
-| Field | What to set |
-|---|---|
-| **Merchant Name** | Tap the field → select **Shortcut Input** → choose **Merchant** |
-| **Amount** | Tap the field → select **Shortcut Input** → choose **Amount** |
-| **Card Name** | Tap the field → select **Shortcut Input** → choose **Card** |
-| **Ledger** | Choose the ledger to save drafts into |
-| **Category** *(optional)* | Pre-select a category, or leave blank to assign later |
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>What to set</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Field"><strong>Merchant Name</strong></td>
+      <td data-label="What to set">Tap the field → select **Shortcut Input** → choose **Merchant**</td>
+    </tr>
+    <tr>
+      <td data-label="Field"><strong>Amount</strong></td>
+      <td data-label="What to set">Tap the field → select **Shortcut Input** → choose **Amount**</td>
+    </tr>
+    <tr>
+      <td data-label="Field"><strong>Card Name</strong></td>
+      <td data-label="What to set">Tap the field → select **Shortcut Input** → choose **Card**</td>
+    </tr>
+    <tr>
+      <td data-label="Field"><strong>Ledger</strong></td>
+      <td data-label="What to set">Choose the ledger to save drafts into</td>
+    </tr>
+    <tr>
+      <td data-label="Field"><strong>Category</strong> <em>(optional)</em></td>
+      <td data-label="What to set">Pre-select a category, or leave blank to assign later</td>
+    </tr>
+  </tbody>
+</table>
 
 5. Tap **Done**.
 6. Turn off **Ask Before Running** so the automation runs silently in the background.

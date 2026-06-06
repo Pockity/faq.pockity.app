@@ -1,13 +1,13 @@
 {% set navPages = collections.all | eleventyNavigation %}
 
-<dialog id="toc-modal" class="toc-modal">
+<dialog id="toc-modal" class="toc-modal" role="dialog" aria-labelledby="toc-modal-title">
   <div class="toc-modal-header">
     <button id="close-toc" class="toc-close-button" aria-label="Close Table of Contents">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
   </div>
   <div class="toc-modal-content">
-    <h2 class="toc-modal-title">Pockity</h2>
+    <h2 id="toc-modal-title" class="toc-modal-title">Pockity</h2>
     
     <nav class="toc-modal-nav">
       {% macro renderTocItem(entry) %}
@@ -15,7 +15,7 @@
           {% if entry.children.length > 0 %}
             <details class="toc-details" {% if page.url and entry.url and page.url.startsWith(entry.url) %}open{% endif %}>
               <summary class="toc-summary">
-                <svg class="toc-expander" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <svg class="toc-expander" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 {% if entry.url %}
                   <a href="{{ entry.url | url }}" class="toc-link {% if entry.url == page.url %}active{% endif %}">{{ entry.title }}</a>
                 {% else %}

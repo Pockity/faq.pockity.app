@@ -23,7 +23,7 @@ It can be a:
 - Transfer 
 - Reimbursement (Income)
 
-#### Payments 
+### Payments 
 Payment entries are always associated with an `Account` and a `Category`. 
 
 The transfer transaction happens like so:
@@ -48,7 +48,7 @@ In a double entry system, the total transaction amount should always result to z
 In effect, Categories function like an expense account which always get credited. As they are not *owned* by you, the funds transferred to them are no longer available. 
 
 
-#### Transfers
+### Transfers
 An account transfer is simply moving funds from one account to another. Their transaction is simple:
 ```
 Savings Account: -$300.00
@@ -60,7 +60,7 @@ Savings Account: -$300.00
 
 Some tips about transferring across accounts are [listed here](/entries/transfers/).
 
-#### Reimbursement 
+### Reimbursement 
 A reimbursement is an income transaction. It works using a specialized category, `Reimbursements` to account for the double entry system and keep the transaction amount as zero. A transaction would look as follows:
 ```
          Salary:  $5000.00
